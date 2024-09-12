@@ -9,3 +9,10 @@ resource "aws_s3_bucket" "test" {
     enabled = var.versioning
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "tfstate222"
+    key    = "state/"
+    region = "eu-north-1"
+  }
+}
