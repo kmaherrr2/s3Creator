@@ -1,3 +1,3 @@
-bucket_name = "my-example-bucket"
+bucket_name = "jenkinsfirsts3bucket"
 versioning = true
 region      = "us-east-1"
