@@ -5,6 +5,3 @@ variable "bucket_name" {
 variable "versioning" {
   type    = bool
 }
-variable "region" {
-  type        = string
-}
