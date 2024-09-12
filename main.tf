@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "test" {
 terraform {
   backend "s3" {
     bucket = "tfstate222"
-    key    = "state/"
+    key    = "state"
     region = "eu-north-1"
   }
 }
