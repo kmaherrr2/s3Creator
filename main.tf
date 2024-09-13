@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "random_string" "bucketrandom" {
   length  = 10  
-  upper   = true
+  upper   = false
   lower   = true
   number  = true
   special = false
@@ -12,7 +12,7 @@ resource "random_string" "bucketrandom" {
 
 # Use the random string in the S3 bucket name
 resource "aws_s3_bucket" "test" {
-  bucket = "${var.bucket_name}-${random_string.bucketrandom.result}"
+  bucket = "${var.bucket_name}${random_string.bucketrandom.result}"
   acl    = "private"
   
   versioning {
