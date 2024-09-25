@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "random_string" "bucketrandom" {
-  length  = 11  
+  length  = 15  
   upper   = false
   lower   = true
   number  = true
